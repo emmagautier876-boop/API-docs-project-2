@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference id="get_all_orders">
+    <title>Get All Orders</title>
+    <shortdesc>Returns a list of all orders.</shortdesc>
+    <refbody>
+        <section id="syntax">
+            <title>HTTP Request</title>
+            <codeblock><ph outputclass="http-method">GET</ph> /orders</codeblock>
+        </section>
+        
+        <section id="response">
+            <title>Response (Status 200)</title>
+            <codeblock outputclass="json">[
+                {
+                "id": 101,
+                "customer": "John Smith",
+                "status": "Processing"
+                }
+                ]</codeblock>
+        </section>
+    </refbody>
+</reference>
